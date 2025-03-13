@@ -1,0 +1,96 @@
+body {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    padding: 1rem 2rem;
+}
+
+header {
+    position: relative;
+    padding: 6rem 0;
+    text-align: left;
+    overflow: hidden;
+}
+
+header::before,
+header::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(200, 200, 200, 0.1);
+    z-index: 0;
+}
+
+header::before {
+    width: 300px;
+    height: 300px;
+    top: -50px;
+    left: -150px;
+}
+
+header::after {
+    width: 500px;
+    height: 500px;
+    bottom: -100px;
+    right: -200px;
+}
+
+header .container {
+    position: relative;
+    z-index: 1;
+}
+
+h1, h2, h3 {
+    font-weight: bold;
+}
+
+#darts-checkout h2,
+#darts-checkout h3 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.feature-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding-top: 2rem;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.feature-list li {
+    background: #f8f9fa;
+    padding: 1rem;
+    border-radius: 16px;
+}
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    padding-top: 2rem;
+}
+
+.image-gallery img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 10px;
+}
+
+footer {
+    margin-top: 4rem;
+    padding: 2rem 0;
+}
+
+.bg-primary {
+    background-color: rgb(50, 50, 50) !important;
+}
+
+.appstore-badge {
+    padding: 2rem 0;
+}
