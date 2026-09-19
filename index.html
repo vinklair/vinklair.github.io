@@ -1,138 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Vinklair Apps</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <title>Vinklair Apps: Darts Checkout and Number Sense for iPhone</title>
+    <meta name="description" content="Focused apps for iPhone and Apple Watch: Darts Checkout, the checkout coach and match scorer for darts players, and Number Sense, for hearing numbers in any language.">
+    <link rel="canonical" href="https://vinklairapps.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Vinklair Apps">
+    <meta property="og:description" content="Focused apps for iPhone and Apple Watch: Darts Checkout and Number Sense.">
+    <meta property="og:url" content="https://vinklairapps.com/">
+    <meta property="og:image" content="https://vinklairapps.com/img/icons/darts-checkout-pro.png">
+    <meta name="theme-color" content="#0e0f11" media="(prefers-color-scheme: dark)">
+    <meta name="theme-color" content="#f6f6f4" media="(prefers-color-scheme: light)">
+    <link rel="icon" href="img/icons/favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="img/icons/apple-touch-icon.png">
+    <link rel="stylesheet" href="assets/site.css">
+    <script src="assets/site.js" defer></script>
 </head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">Vinklair Apps</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html#darts-checkout">Darts Checkout Free</a></li>
-                    <li class="nav-item"><a class="nav-link" href="darts-checkout-pro.html">Darts Checkout Pro</a></li>
-                    <li class="nav-item"><a class="nav-link" href="number-sense.html">Number Sense</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+<body class="app-free">
+    <a class="skip" href="#main">Skip to content</a>
 
-    <header class="bg-primary text-white">
-        <div class="container">
-            <h1>Welcome to Vinklair Apps</h1>
-            <p>I develop innovative and engaging iOS apps and games. I focus on creating high-quality applications that are both user-friendly and entertaining.</p>
+    <header class="nav">
+        <div class="wrap">
+            <a class="brand" href="./">
+                <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
+                    <circle cx="16" cy="16" r="14.5" fill="none" stroke="currentColor" stroke-opacity=".35" stroke-width="2"/>
+                    <circle cx="16" cy="16" r="9" fill="none" stroke="currentColor" stroke-opacity=".35" stroke-width="2"/>
+                    <path d="M6.2 9.4a11.6 11.6 0 0 1 19.6 0" fill="none" stroke="#49ab81" stroke-width="3.2" stroke-linecap="round"/>
+                    <circle cx="16" cy="16" r="3" fill="#d4393a"/>
+                </svg>
+                Vinklair Apps
+            </a>
+            <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Menu">&#9776;</button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="darts-checkout.html">Darts Checkout</a></li>
+                <li><a href="darts-checkout-pro.html">Darts Checkout Pro</a></li>
+                <li><a href="number-sense.html">Number Sense</a></li>
+                <li><a href="#support">Support</a></li>
+            </ul>
         </div>
     </header>
 
-    <section id="darts-checkout" class="container my-5 section-padding">
-        <h2>Darts Checkout Free App</h2>
-        <p>Transform your darts game and dominate the oche! This isn't just a checkout chart; it's your personal darts training coach. Whether you're learning the basics or aiming for pro-level precision, this app provides the tools and practice you need to succeed.</p>
+    <main id="main">
+        <section class="hero">
+            <div class="wrap">
+                <div class="hero-copy">
+                    <span class="eyebrow">Independent iPhone apps</span>
+                    <h1>Small apps that make you better at one thing.</h1>
+                    <svg class="arc" viewBox="0 0 260 26" aria-hidden="true"><path d="M4 22 Q130 -8 256 22" fill="none" stroke="currentColor" stroke-width="8" stroke-linecap="round"/></svg>
+                    <p class="lede">Finish more legs at the oche. Understand numbers when they are spoken fast. Clear tools for iPhone and Apple Watch, with no subscriptions.</p>
+                    <div class="hero-actions">
+                        <a class="button" href="#apps">See the apps</a>
+                        <a class="hero-note" href="#support">Questions? Get in touch</a>
+                    </div>
+                </div>
+                <picture>
+                    <source srcset="img/darts-checkout-pro/search.avif" type="image/avif">
+                    <img class="hero-device" src="img/darts-checkout-pro/search.png" alt="Darts Checkout Pro on iPhone showing the checkout table, with the Apple Watch app in front" width="376" height="800">
+                </picture>
+            </div>
+        </section>
 
-        <div class="text-center pt-4">
-            <img src="img/DartsCheckoutFree360x360.png" alt="Darts Checkout Pro icon" style="width: 120px; height: 120px; border-radius: 23%;">
+        <section id="apps" class="band">
+            <div class="wrap">
+                <div class="section-head">
+                    <span class="eyebrow">The apps</span>
+                    <h2>Pick your practice</h2>
+                </div>
+                <div class="apps">
+                    <a class="app-card free" id="darts-checkout" href="darts-checkout.html">
+                        <img class="icon" src="img/icons/darts-checkout.png" alt="" width="72" height="72">
+                        <h3>Darts Checkout</h3>
+                        <p>The checkout coach and X01 scorer for every darts player. Look up any finish, score real matches, and train your mental arithmetic. Free, with ads you can remove.</p>
+                        <div class="tags"><span class="tag">iPhone</span><span class="tag">iPad</span><span class="tag">Free</span></div>
+                        <span class="more">Learn more &rarr;</span>
+                    </a>
+                    <a class="app-card pro" href="darts-checkout-pro.html">
+                        <img class="icon" src="img/icons/darts-checkout-pro.png" alt="" width="72" height="72">
+                        <h3>Darts Checkout Pro</h3>
+                        <p>Everything in Darts Checkout, without ads, plus an Apple Watch app for checkouts and quick practice right on your wrist.</p>
+                        <div class="tags"><span class="tag">iPhone</span><span class="tag">iPad</span><span class="tag">Apple Watch</span><span class="tag">No ads</span></div>
+                        <span class="more">Learn more &rarr;</span>
+                    </a>
+                    <a class="app-card number-sense" id="number-sense" href="number-sense.html">
+                        <img class="icon" src="img/icons/number-sense.png" alt="" width="72" height="72">
+                        <h3>Number Sense</h3>
+                        <p>Train your ear for spoken numbers in dozens of languages. Hear a number, type it, and get instant feedback. One purchase, no ads, no subscription.</p>
+                        <div class="tags"><span class="tag">iPhone</span><span class="tag">iPad</span><span class="tag">Languages</span></div>
+                        <span class="more">Learn more &rarr;</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="support">
+            <div class="wrap">
+                <div class="section-head">
+                    <span class="eyebrow">Support</span>
+                    <h2>Made by one developer, who reads every email</h2>
+                    <p>Found a bug, missing a checkout route, or have an idea for the next version? Write to me and you will get an answer.</p>
+                </div>
+                <div class="contact">
+                    <p><strong>vinklair.apps@gmail.com</strong><br><span class="hero-note">Usually answered within a few days.</span></p>
+                    <a class="button" href="mailto:vinklair.apps@gmail.com?subject=Vinklair%20Apps">Send an email</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="wrap">
+            <span>&copy; <span data-year>2026</span> Vinklair Apps</span>
+            <ul>
+                <li><a href="darts-checkout-free-privacy-policy.html">Darts Checkout privacy</a></li>
+                <li><a href="darts-checkout-pro-privacy-policy.html">Darts Checkout Pro privacy</a></li>
+                <li><a href="number-sense-privacy-policy.html">Number Sense privacy</a></li>
+            </ul>
         </div>
-
-        <div class="text-center my-4 appstore-badge">
-            <a href="https://apps.apple.com/us/app/darts-checkout/id1160504503" target="_blank">
-                <img src="img/appstorebadge300.png" alt="Download on the App Store" style="width: 150px;">
-            </a>
-        </div>
-
-        <div class="image-gallery">
-            <img src="img/screenshot_web_0_DartsCheckoutScreen1Home.png" alt="Home screen with checkout tables">
-        </div>
-
-        <h3>Key Features</h3>
-        <ul class="feature-list">
-            <li>Complete checkout table with a quick search function.</li>
-            <li>Instant remaining score calculation, quickly add your thrown values after a search!</li>
-            <li>Alternative checkout options to expand your strategic thinking.</li>
-            <li>Engaging checkout quiz to test your knowledge.</li>
-            <li>Multiple variations of Subtraction and Addition games for rapid mental calculation.</li>
-            <li>Fully rebuilt with SwiftUI and supporting both dark and light modes.</li>
-        </ul>
-
-        <h3>Screenshots</h3>
-        <div class="image-gallery">
-            <img src="img/screenshot_web_0_DartsCheckoutScreen1Home.png" alt="Home screen with checkout tables">
-            <img src="img/screenshot_web_1_DartsCheckoutScreen2Search.png" alt="Search feature visible">
-            <img src="img/screenshot_web_2_DartsCheckoutScreen3Throw.png" alt="Throw feature visible">
-            <img src="img/screenshot_web_3_DartsCheckoutScreen4Games.png" alt="Games menu">
-            <img src="img/screenshot_web_4_DartsCheckoutScreen5Quiz.png" alt="Checkout Quiz game">
-            <img src="img/screenshot_web_5_DartsCheckoutScreen6Sub.png" alt="Subtraction game">
-            <img src="img/screenshot_web_6_DartsCheckoutScreen7Add.png" alt="Addition game">
-            <img src="img/screenshot_web_7_DartsCheckoutScreen8Light.png" alt="Light mode menu">
-        </div>
-
-        <div class="text-center my-4 appstore-badge">
-            <a href="https://apps.apple.com/us/app/darts-checkout/id1160504503" target="_blank">
-                <img src="img/appstorebadge300.png" alt="Download on the App Store" style="width: 150px;">
-            </a>
-        </div>
-    </section>
-
-    <section id="number-sense" class="container my-5 section-padding">
-        <h2>Darts Checkout Pro App</h2>
-        <p>Transform your darts game and dominate the oche - without the distraction of ads!</p>
-        <p>Darts Checkout Pro is more than just a checkout chart; it's your ultimate personal darts training coach. Whether you're mastering the basics or striving for pro-level precision, this premium app gives you every tool and training opportunity you need, optimized for both iPhone and Apple Watch.</p>
-
-        <div class="text-center pt-4">
-            <img src="img/DartsCheckoutPro360x360.png" alt="Darts Checkout Pro icon" style="width: 120px; height: 120px; border-radius: 23%;">
-        </div>
-
-        <div class="text-center my-4 appstore-badge">
-            <a href="https://apps.apple.com/us/app/darts-checkout-pro/id1035160515" target="_blank">
-                <img src="img/appstorebadge300.png" alt="Download on the App Store" style="width: 150px;">
-            </a>
-        </div>
-
-        <div class="text-center my-4">
-            <a href="darts-checkout-pro.html" class="btn btn-primary">Learn More</a>
-        </div>
-
-        <div class="image-gallery">
-            <img src="img/screenshot_web_0_DCP1Home.png" alt="Darts Checkout Pro Home screen">
-        </div>
-    </section>
-
-    <section id="number-sense" class="container my-5 section-padding">
-        <h2>Number Sense - Hearing App</h2>
-        <p>Master the art of understanding spoken numbers across languages.  Enjoy a clean, focused learning environment with our one-time purchase model: no ads, no subscriptions, just pure learning.</p>
-        <p>Enhance your numerical listening skills with Number Sense – Hearing. Whether you’re learning a new language or aiming to improve your auditory comprehension of numbers, this app offers an interactive and engaging experience tailored just for you.</p>
-
-        <div class="text-center pt-4">
-            <img src="img/NumberSense360x360.png" alt="Darts Checkout Pro icon" style="width: 120px; height: 120px; border-radius: 23%;">
-        </div>
-
-        <div class="text-center my-4 appstore-badge">
-            <a href="https://apps.apple.com/us/app/darts-checkout-pro/id1035160515" target="_blank">
-                <img src="img/appstorebadge300.png" alt="Download on the App Store" style="width: 150px;">
-            </a>
-        </div>
-
-        <div class="text-center my-4">
-            <a href="number-sense.html" class="btn btn-primary">Learn More</a>
-        </div>
-
-        <div class="image-gallery">
-            <img src="img/screenshot_web_0_NumberSenseHome.png" alt="Number Sense Home screen">
-        </div>
-    </section>
-
-    <footer class="bg-dark text-white text-center">
-        <p>&copy; 2009 Vinklair Apps. All rights reserved.</p>
-        <p><a href="darts-checkout-free-privacy-policy.html" class="text-white">Darts Checkout Free Privacy Policy</a></p>
-        <p><a href="darts-checkout-pro-privacy-policy.html" class="text-white">Darts Checkout Pro Privacy Policy</a></p>
-        <p><a href="number-sense-privacy-policy.html" class="text-white">Number Sense Privacy Policy</a></p>
     </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
