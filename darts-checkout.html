@@ -12,11 +12,13 @@
     <meta property="og:url" content="https://vinklairapps.com/darts-checkout.html">
     <meta property="og:image" content="https://vinklairapps.com/img/icons/darts-checkout.png">
     <meta name="apple-itunes-app" content="app-id=1160504503">
-    <meta name="theme-color" content="#0e0f11" media="(prefers-color-scheme: dark)">
-    <meta name="theme-color" content="#f6f6f4" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#0b0c0f" media="(prefers-color-scheme: dark)">
+    <meta name="theme-color" content="#f7f7f5" media="(prefers-color-scheme: light)">
+    <link rel="icon" href="img/brand/favicon.svg" type="image/svg+xml">
     <link rel="icon" href="img/icons/favicon.png" type="image/png">
     <link rel="apple-touch-icon" href="img/icons/apple-touch-icon.png">
     <link rel="stylesheet" href="assets/site.css">
+    <script>document.documentElement.classList.add("js")</script>
     <script src="assets/site.js" defer></script>
 </head>
 <body class="app-free">
@@ -24,20 +26,12 @@
 
     <header class="nav">
         <div class="wrap">
-            <a class="brand" href="./">
-                <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
-                    <circle cx="16" cy="16" r="14.5" fill="none" stroke="currentColor" stroke-opacity=".35" stroke-width="2"/>
-                    <circle cx="16" cy="16" r="9" fill="none" stroke="currentColor" stroke-opacity=".35" stroke-width="2"/>
-                    <path d="M6.2 9.4a11.6 11.6 0 0 1 19.6 0" fill="none" stroke="#49ab81" stroke-width="3.2" stroke-linecap="round"/>
-                    <circle cx="16" cy="16" r="3" fill="#d4393a"/>
-                </svg>
-                Vinklair Apps
-            </a>
+            <a class="brand" href="./"><img class="brand-mark" src="img/brand/mark.svg" alt="" width="32" height="32">Vinklair <span>Apps</span></a>
             <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Menu">&#9776;</button>
             <ul class="nav-links" id="nav-links">
-                <li><a href="darts-checkout.html" aria-current="page">Darts Checkout</a></li>
-                <li><a href="darts-checkout-pro.html">Darts Checkout Pro</a></li>
-                <li><a href="number-sense.html">Number Sense</a></li>
+                <li><a href="number-sense.html"><img src="img/icons/number-sense.png" alt="" width="22" height="22">Numbers by Ear</a></li>
+                <li><a href="darts-checkout.html" aria-current="page"><img src="img/icons/darts-checkout.png" alt="" width="22" height="22">Darts Checkout</a></li>
+                <li><a href="darts-checkout-pro.html"><img src="img/icons/darts-checkout-pro.png" alt="" width="22" height="22">Darts Checkout Pro</a></li>
                 <li><a href="#support">Support</a></li>
             </ul>
         </div>
@@ -45,6 +39,7 @@
 
     <main id="main">
         <section class="hero">
+            <div class="board" aria-hidden="true"></div>
             <div class="wrap">
                 <div class="hero-copy">
                     <img class="hero-icon" src="img/icons/darts-checkout.png" alt="" width="88" height="88">
@@ -102,7 +97,7 @@
 
         <section id="screenshots">
             <div class="wrap">
-                <div class="section-head">
+                <div class="section-head reveal">
                     <span class="eyebrow">A closer look</span>
                     <h2>Everything a darts player needs in one app</h2>
                 </div>
@@ -134,11 +129,11 @@
 
         <section id="features" class="band">
             <div class="wrap">
-                <div class="section-head">
+                <div class="section-head reveal">
                     <span class="eyebrow">Features</span>
                     <h2>Made for the practice board and the league night</h2>
                 </div>
-                <div class="features">
+                <div class="features" data-stagger>
                     <article class="feature">
                         <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.5"/></svg></span>
                         <h3>Every checkout, 170 to 2</h3>
@@ -185,12 +180,12 @@
 
         <section id="compare">
             <div class="wrap">
-                <div class="section-head">
+                <div class="section-head reveal">
                     <span class="eyebrow">Free or Pro</span>
                     <h2>Same checkouts, same scorer</h2>
                     <p>Darts Checkout is free with ads. Darts Checkout Pro is a one-time purchase with no ads and an Apple Watch app.</p>
                 </div>
-                <div class="compare-wrap">
+                <div class="compare-wrap reveal">
                     <table class="compare">
                         <thead>
                             <tr><th scope="col">Feature</th><th scope="col">Darts Checkout</th><th scope="col">Pro</th></tr>
@@ -212,11 +207,11 @@
 
         <section id="support" class="band">
             <div class="wrap">
-                <div class="section-head">
+                <div class="section-head reveal">
                     <span class="eyebrow">Support</span>
                     <h2>Questions</h2>
                 </div>
-                <div class="faq">
+                <div class="faq" data-stagger>
                     <details>
                         <summary>How do I remove the ads?</summary>
                         <p>Open the Info tab and tap Remove Ads. It is a one-time purchase that stays with your Apple Account, so you can restore it on a new device from the same tab.</p>
@@ -234,7 +229,7 @@
                         <p>Press and hold it to add the route you prefer, hide the one you don't like, or tag it. And please email me, the default routes get better with every report.</p>
                     </details>
                 </div>
-                <div class="contact">
+                <div class="contact reveal">
                     <p><strong>Still stuck?</strong><br><span class="hero-note">Write to vinklair.apps@gmail.com</span></p>
                     <a class="button" href="mailto:vinklair.apps@gmail.com?subject=Darts%20Checkout">Email support</a>
                 </div>
@@ -244,12 +239,13 @@
 
     <footer>
         <div class="wrap">
-            <span>&copy; <span data-year>2026</span> Vinklair Apps</span>
+            <a class="brand" href="./"><img class="brand-mark" src="img/brand/mark.svg" alt="" width="26" height="26">Vinklair <span>Apps</span></a>
             <ul>
                 <li><a href="./">All apps</a></li>
                 <li><a href="darts-checkout-free-privacy-policy.html">Privacy policy</a></li>
                 <li><a href="mailto:vinklair.apps@gmail.com">Contact</a></li>
             </ul>
+            <span>&copy; <span data-year>2026</span> Vinklair Apps</span>
         </div>
     </footer>
 </body>

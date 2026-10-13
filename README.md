@@ -1,11 +1,11 @@
-# Vinklair Apps Website
+# Vinklair Apps website
 
-This is the official website for Vinklair Apps, showcasing innovative and engaging iOS apps and games.
+vinklairapps.com, served by GitHub Pages. Plain HTML, one stylesheet (`assets/site.css`) and one script (`assets/site.js`), no build step.
 
-## Features
+- `index.html`: the company page and the three apps.
+- `number-sense.html`: Numbers by Ear (the App Store listing links to this name, so it keeps it). Its looping videos are in `media/numbers-by-ear/`, cut from the App Preview clips and the App Store header video.
+- `darts-checkout.html`, `darts-checkout-pro.html`: Darts Checkout and Darts Checkout Pro.
+- The privacy policies, one per app, and `404.html`.
+- `img/brand/`: the Vinklair Apps mark (`mark.svg`, also the favicon) and the social preview image.
 
-- **Home Page**: Introduction to Vinklair Apps and its mission.
-- **Darts Checkout Free App**: Detailed information about the Darts Checkout Free App, including key features and screenshots.
-- **Darts Checkout Pro App**: Detailed information about the Darts Checkout Pro App, including key features and screenshots.
-- **Number Sense - Hearing App**: Detailed information about the Number Sense - Hearing App, including features and screenshots.
-- **Privacy Policy**: Privacy policy for the Darts Checkout Free App.
+The blocks between `<!-- marketing:<block>:<page>:start -->` and `end` markers, and the image folders `img/number-sense/`, `img/darts-checkout/` and `img/darts-checkout-pro/`, are written by each app's release tools on a `release/<version>` branch. Edit everything else by hand.
