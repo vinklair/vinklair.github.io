@@ -649,6 +649,29 @@ section { padding: 96px 0; position: relative; }
 .legal th, .legal td { text-align: left; vertical-align: top; padding: 10px 12px; border-bottom: 1px solid var(--line); color: var(--text-soft); }
 .legal th { color: var(--text); font-weight: 650; }
 
+/* ---------- Press pages (the iPhone Duo page for the App Store editors) ---------- */
+
+.press-hero { padding: 72px 0 80px; }
+.press-head { display: grid; justify-items: center; text-align: center; gap: 18px; margin-bottom: 48px; }
+.press-head h1 { font-size: clamp(2.3rem, 5.4vw, 4.2rem); max-width: 18ch; }
+.press-head .lede { max-width: 52ch; }
+.slides { display: grid; gap: 56px; }
+.slide { margin: 0; display: grid; gap: 14px; }
+.slide > a { display: block; border-radius: var(--radius); overflow: hidden; border: 1px solid var(--line); box-shadow: var(--shadow-soft); transition: transform 0.5s var(--ease); }
+.slide > a:hover { transform: translateY(-4px); }
+.slide img { width: 100%; }
+.slide figcaption { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 20px; color: var(--text-soft); font-size: 0.97rem; }
+.slide figcaption strong { color: var(--text); }
+.slide figcaption a { white-space: nowrap; font-weight: 600; }
+.facts { background: var(--bg-raised); border: 1px solid var(--line); border-radius: var(--radius); padding: 8px 28px; }
+.facts dl { margin: 0; }
+.facts dl > div { display: grid; grid-template-columns: 10rem 1fr; gap: 4px 24px; padding: 16px 0; border-top: 1px solid var(--line); }
+.facts dl > div:first-child { border-top: 0; }
+.facts dt { font-weight: 650; }
+.facts dd { margin: 0; color: var(--text-soft); }
+.trademarks { margin-top: 28px; color: var(--text-faint); font-size: 0.85rem; }
+@media (max-width: 560px) { .facts { padding: 4px 20px; } .facts dl > div { grid-template-columns: 1fr; } }
+
 /* ---------- Footer ---------- */
 
 footer { padding: 52px 0 60px; border-top: 1px solid var(--line); color: var(--text-faint); font-size: 0.92rem; }
@@ -663,7 +686,7 @@ footer a { color: var(--text-soft); }
 @media (prefers-reduced-motion: reduce) {
     html { scroll-behavior: auto; }
     *, *::before, *::after { animation: none !important; }
-    .shot img, .gallery-progress span, .game, .app-card, .feature, .new-card { transition: none; }
+    .shot img, .gallery-progress span, .game, .app-card, .feature, .new-card, .slide > a { transition: none; }
     .js .reveal { opacity: 1; transform: none; transition: none; }
     .arc path, .big-mark .arm { stroke-dashoffset: 0; }
     .big-mark .bull { transform: none; }

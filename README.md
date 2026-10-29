@@ -5,6 +5,7 @@ vinklairapps.com, served by GitHub Pages. Plain HTML, one stylesheet (`assets/si
 - `index.html`: the company page and the three apps.
 - `number-sense.html`: Numbers by Ear (the App Store listing links to this name, so it keeps it). Its looping videos are in `media/numbers-by-ear/`, cut from the App Preview clips and the App Store header video.
 - `darts-checkout.html`, `darts-checkout-pro.html`: Darts Checkout and Darts Checkout Pro.
+- `numbers-by-ear-iphone-duo.html`: the Numbers by Ear 2.1 iPhone Duo page for the App Store featuring nomination (its supplemental link). Not in the menu or the sitemap, and `noindex` until 2.1 is out. Its slides are in `img/numbers-by-ear-iphone-duo/` (AVIF and JPEG at 1920, the PNG at 3840×2160), made by the app's `marketing featuring`; the release tools never touch that folder.
 - The privacy policies, one per app, and `404.html`.
 - `img/brand/`: the Vinklair Apps mark (`mark.svg`, also the favicon) and the social preview image.
 
