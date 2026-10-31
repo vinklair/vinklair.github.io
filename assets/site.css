@@ -617,12 +617,17 @@ body.app-home .eyebrow::before { content: ""; flex: none; width: 9px; height: 9p
 .mark-stage .orbit i.b { top: auto; bottom: -26px; }
 .mark-stage .orbit i.c { top: calc(50% - 26px); left: -26px; }
 .big-mark { position: relative; width: 48%; filter: drop-shadow(0 30px 50px rgba(2, 4, 16, 0.55)); }
-.big-mark .trail { stroke-dasharray: 1; stroke-dashoffset: 1; animation: draw 0.55s cubic-bezier(0.4, 0, 0.6, 1) forwards; }
+/* One dash the length of the path, then a longer gap. The dash starts just
+   off the path, so no zero-length piece sits on either end and draws its
+   round cap as a dot before the line moves. */
+.big-mark .trail { stroke-dasharray: 1 2; stroke-dashoffset: 1.05; animation: trace 0.55s cubic-bezier(0.4, 0, 0.6, 1) forwards; }
 .big-mark .trail:nth-of-type(2) { animation-delay: 0.5s; }
 .big-mark .trail:nth-of-type(3) { animation-delay: 1s; animation-duration: 0.7s; }
-.big-mark .ball { transform-box: fill-box; transform-origin: center; transform: scale(0); animation: pop 0.6s 1.6s cubic-bezier(0.3, 1.6, 0.5, 1) forwards, bob 2.8s 2.4s ease-in-out infinite; }
+/* The ball rests where the last bounce's curve would carry it, and pops in there. */
+.big-mark .ball { transform-box: fill-box; transform-origin: center; transform: scale(0); animation: pop 0.6s 1.65s cubic-bezier(0.3, 1.6, 0.5, 1) forwards, pulse 2.4s 2.6s ease-in-out infinite; }
+@keyframes trace { to { stroke-dashoffset: 0; } }
 @keyframes pop { to { transform: scale(1); } }
-@keyframes bob { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-4px); } }
+@keyframes pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.18); } }
 
 .principles { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 18px; }
 

@@ -5,6 +5,6 @@
     <path d="M7 82 Q15 66 23 82" stroke="#3550d0"/>
     <path d="M23 82 Q37 46 51 82" stroke="#5a76f2"/>
     <path d="M51 82 C57 58 65 36 77 26" stroke="#8fa4ff"/>
-    <circle cx="86" cy="17" r="9" fill="#2ed3a0" stroke="none"/>
+    <circle cx="92.5" cy="18.5" r="8" fill="#2ed3a0" stroke="none"/>
   </g>
 </svg>
