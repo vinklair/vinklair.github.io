@@ -121,6 +121,12 @@ p { margin: 0; }
 .ink {
     background: linear-gradient(100deg, var(--accent), var(--accent-2));
     -webkit-background-clip: text; background-clip: text; color: transparent;
+    /* The gradient is painted only inside the box, and with headings' tight
+       tracking a rounded letter's edge reaches past it (the "o" of "nativo."
+       lost its right side). Room either side, taken back by the margin, so
+       nothing moves; cloned on every line a word wraps onto. */
+    padding: 0 0.1em; margin: 0 -0.1em;
+    -webkit-box-decoration-break: clone; box-decoration-break: clone;
 }
 
 /* ---------- Navigation ---------- */
