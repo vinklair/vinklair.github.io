@@ -20,6 +20,18 @@ document.addEventListener("DOMContentLoaded", () => {
         }));
     }
 
+    // The language menu closes on a click elsewhere, or Escape.
+    document.querySelectorAll(".lang-menu details").forEach((menu) => {
+        document.addEventListener("click", (event) => {
+            if (!menu.contains(event.target)) menu.open = false;
+        });
+        menu.addEventListener("keydown", (event) => {
+            if (event.key !== "Escape" || !menu.open) return;
+            menu.open = false;
+            menu.querySelector("summary").focus();
+        });
+    });
+
     // A line under the bar once the page has moved.
     const nav = document.querySelector(".nav");
     const onScroll = () => nav && nav.classList.toggle("scrolled", window.scrollY > 8);
