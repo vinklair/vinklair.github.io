@@ -7,7 +7,12 @@
    .shot-area, .gallery, .shot, .watch-row).
 
    The brand is the Bounce mark: blue trails that climb, and a mint ball.
-   Night blue grounds, Outfit for headings, no orange anywhere. */
+   Night blue grounds, no orange anywhere.
+
+   Type is the system's rounded font, the one the apps use (SF Pro Rounded,
+   through ui-rounded, which Safari offers on iPhone, iPad and Mac). Where a
+   browser has no rounded system font, headings fall back to Outfit and text
+   to the system's own. */
 
 /* Outfit, served from here rather than from Google (OFL, see fonts/OFL.txt). */
 @font-face {
@@ -47,8 +52,8 @@
     --green: #49ab81;
     --cyan: #19b0d8;
     --red: #e5393a;
-    --font: -apple-system, BlinkMacSystemFont, "SF Pro Text", system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    --font-round: "Outfit", ui-rounded, "SF Pro Rounded", -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, sans-serif;
+    --font: ui-rounded, "SF Pro Rounded", -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --font-round: ui-rounded, "SF Pro Rounded", "Outfit", -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, sans-serif;
     --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
     color-scheme: dark light;
 }
