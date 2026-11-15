@@ -150,6 +150,22 @@ p { margin: 0; }
 .nav-links a[aria-current="page"] { color: var(--text); background: var(--line); }
 .nav-toggle { display: none; }
 
+/* The language menu: a globe and the page's language, opening a short list. */
+.lang-menu details { position: relative; }
+.lang-menu summary {
+    display: flex; align-items: center; gap: 6px; padding: 8px 12px; border-radius: 999px; color: var(--text-soft);
+    font-size: 0.94rem; font-weight: 550; cursor: pointer; list-style: none;
+}
+.lang-menu summary::-webkit-details-marker { display: none; }
+.lang-menu summary:hover, .lang-menu details[open] summary { color: var(--text); background: var(--line); }
+.lang-menu summary svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 1.6; }
+.lang-menu ul {
+    position: absolute; right: 0; top: calc(100% + 8px); min-width: 200px; margin: 0; padding: 6px; list-style: none;
+    background: var(--bg-raised); border: 1px solid var(--line-strong); border-radius: 16px; box-shadow: var(--shadow-soft);
+}
+.lang-menu ul a { border-radius: 10px; }
+.lang-menu ul a[aria-current="true"] { color: var(--text); background: var(--accent-soft); }
+
 @media (max-width: 900px) {
     .nav-toggle {
         display: grid; place-items: center; margin-left: auto; width: 42px; height: 42px;
@@ -162,6 +178,8 @@ p { margin: 0; }
     }
     .nav-links.open { display: flex; }
     .nav-links a { padding: 12px 14px; font-size: 1.05rem; border-radius: 14px; }
+    .lang-menu summary { padding: 12px 14px; font-size: 1.05rem; border-radius: 14px; }
+    .lang-menu ul { position: static; min-width: 0; padding: 0 0 0 26px; background: none; border: 0; box-shadow: none; }
 }
 
 /* ---------- Buttons and badges ---------- */
