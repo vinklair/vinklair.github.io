@@ -1,0 +1,111 @@
+/* Darts Checkout and Darts Checkout Pro (6.0). Loaded after site.css, which
+   it builds on: the hero frame, the scroll story, the game cards, tiers and
+   promises are site.css's; this file gives the Darts pages their own ground,
+   the dark green of the app's board wall and its header video, and the few
+   pieces only they have. The free app is green, Pro is red, as their icons. */
+
+body.darts {
+    --bg: #0d1512;
+    --bg-raised: #15211c;
+    --bg-raised-2: #1c2b25;
+    --bg-sunken: #0a110e;
+    --line: rgba(190, 235, 214, 0.09);
+    --line-strong: rgba(190, 235, 214, 0.17);
+    --text: #f1f7f4;
+    --text-soft: #a9bdb4;
+    --text-faint: #7d938a;
+    --board-red: #c8382c;
+    --board-green: #2e8b57;
+    --board-cream: #eadfc3;
+    --gold: #e8b63e;
+    --shadow: 0 30px 60px -20px rgba(0, 0, 0, 0.7);
+}
+body.darts.app-free { --accent: #49ab81; --accent-2: #9fe0bf; --accent-soft: rgba(73, 171, 129, 0.17); }
+body.darts.app-pro { --accent: #e5483a; --accent-2: #ffb347; --accent-soft: rgba(229, 72, 58, 0.16); }
+
+@media (prefers-color-scheme: light) {
+    body.darts {
+        --bg: #f4f7f5;
+        --bg-raised: #ffffff;
+        --bg-raised-2: #e9efec;
+        --bg-sunken: #eaf0ed;
+        --line: rgba(13, 30, 23, 0.08);
+        --line-strong: rgba(13, 30, 23, 0.15);
+        --text: #0f1d17;
+        --text-soft: #44564e;
+        --text-faint: #66766f;
+        --shadow: 0 30px 60px -24px rgba(13, 30, 23, 0.28);
+    }
+    body.darts.app-free { --accent: #2f8c63; }
+    body.darts.app-pro { --accent: #c9352a; }
+}
+
+/* ---------- Hero: the header video, the app's own ---------- */
+
+.darts-hero .sea-frame {
+    background-color: #14221c;
+    box-shadow: 0 50px 90px -40px rgba(10, 60, 40, 0.6), 0 0 0 1px var(--line);
+}
+.darts-hero .sea-copy h1 { max-width: 13ch; }
+.darts .ink {
+    background: linear-gradient(100deg, var(--accent), var(--accent-2));
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+
+/* ---------- The numbers strip ---------- */
+
+.stat-strip {
+    list-style: none; margin: 0; padding: 0;
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px;
+    border-radius: 26px; overflow: hidden; background: var(--line);
+    border: 1px solid var(--line);
+}
+.stat-strip li { display: grid; gap: 6px; align-content: center; padding: 26px 24px; background: var(--bg-raised); }
+.stat-strip strong {
+    font: 800 clamp(2.2rem, 4vw, 3rem)/1 var(--font-round); letter-spacing: -0.03em;
+    background: linear-gradient(100deg, var(--accent), var(--accent-2));
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+.stat-strip span { color: var(--text-soft); font-size: 0.98rem; }
+@media (max-width: 760px) { .stat-strip { grid-template-columns: 1fr 1fr; } .stat-strip li { padding: 20px 18px; } }
+
+/* ---------- Story and cards: the board's colours ---------- */
+
+.darts .story-stage .glow {
+    background: conic-gradient(from 0deg, var(--board-red), var(--board-green), var(--board-cream), var(--board-red));
+    opacity: 0.28;
+}
+.darts .story-step h3 .tag { vertical-align: middle; margin-left: 6px; font-size: 0.8rem; }
+.darts .tag.pro { background: linear-gradient(120deg, var(--gold), #ffd977); color: #2b1d02; }
+.darts .tag.free { background: rgba(73, 171, 129, 0.18); color: #49ab81; }
+.darts .tag.listen { background: rgba(229, 72, 58, 0.16); color: #ff8a7a; }
+.darts .tag.say { background: rgba(232, 182, 62, 0.18); color: #e8b63e; }
+@media (prefers-color-scheme: light) {
+    .darts .tag.listen { color: #b42e22; }
+    .darts .tag.say { color: #8a6410; }
+}
+
+/* A dartboard's rings, faint, behind the section heads that open a part. */
+.darts #training, .darts #pro, .darts #compare { position: relative; overflow: hidden; isolation: isolate; }
+.darts #training::before, .darts #pro::before, .darts #compare::before {
+    content: ""; position: absolute; z-index: -1; width: 900px; aspect-ratio: 1; left: 50%; top: -520px;
+    transform: translateX(-50%); border-radius: 50%; opacity: 0.5;
+    background: repeating-radial-gradient(circle, transparent 0 58px, var(--ring) 58px 60px);
+    -webkit-mask-image: radial-gradient(circle, #000 40%, transparent 70%);
+    mask-image: radial-gradient(circle, #000 40%, transparent 70%);
+}
+
+/* ---------- Free or Pro ---------- */
+
+.darts .tier.pro {
+    background:
+        linear-gradient(var(--bg-raised), var(--bg-raised)) padding-box,
+        linear-gradient(135deg, var(--gold), var(--accent) 55%, var(--board-green)) border-box;
+    box-shadow: 0 30px 60px -30px rgba(232, 182, 62, 0.35);
+}
+.darts .tier.pro li::before { color: var(--gold); }
+.darts .tier .button, .darts .tier .badge-store { justify-self: start; margin-top: 6px; }
+
+/* ---------- Apple Watch row ---------- */
+
+.darts .watch-row { justify-content: center; }

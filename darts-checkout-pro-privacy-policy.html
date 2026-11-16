@@ -34,14 +34,15 @@
     <main id="main" class="legal">
         <div class="wrap">
             <h1>Darts Checkout Pro privacy policy</h1>
-            <p class="updated">Last updated: September 19, 2026</p>
+            <p class="updated">Last updated: November 15, 2026</p>
 
             <div class="summary">
                 <p><strong>In short</strong></p>
                 <ul>
                     <li>Your matches, scores and settings stay on your device.</li>
                     <li>Your custom checkout routes and badges sync through your own iCloud account. I can't see them.</li>
-                    <li>The iPhone and iPad app uses Google Firebase for usage statistics and crash reports that don't include your name.</li>
+                    <li>Usage statistics and crash reports (Google Firebase) are sent from the iPhone and iPad app only if you say yes, and never include your name.</li>
+                    <li>Feedback you send from the app reaches me through iCloud, and holds only what you write.</li>
                     <li>There are no ads and no tracking. The Apple Watch app sends nothing at all.</li>
                     <li>There are no accounts, and I never sell your data.</li>
                 </ul>
@@ -54,7 +55,7 @@
             <p>The app stores these on your device only. None of it is sent to me or to anyone else:</p>
             <ul>
                 <li><strong>Scorer matches:</strong> the player names you type, the darts you enter, and the match settings.</li>
-                <li><strong>Game results:</strong> your best scores in the quiz and math games.</li>
+                <li><strong>Game and training results:</strong> your best scores and levels in the games and board drills, and your hit rate on each double.</li>
                 <li><strong>Settings:</strong> appearance, layout, font size, orientation and similar preferences.</li>
             </ul>
             <p>Deleting the app deletes this data. Your device backups may still contain it, under your control.</p>
@@ -62,15 +63,17 @@
             <h2>Data synced through your iCloud account</h2>
             <p>Your checkout customizations (your own routes, hidden routes, route order and badges) are saved in iCloud key-value storage in your own Apple Account, so they appear on your other devices signed in to the same account. Apple handles this storage under the <a href="https://www.apple.com/legal/privacy/">Apple Privacy Policy</a>. I have no access to it. You can change or remove any customization in the app at any time, and the change syncs to your other devices.</p>
 
-            <h2>Usage statistics and crash reports</h2>
-            <p>The iPhone and iPad app uses these Google Firebase services to understand how it is used and to fix problems:</p>
+            <h2>Usage statistics and crash reports, only with your yes</h2>
+            <p>The first time you open version 6.0 or later, the app asks whether it may send anonymous usage statistics and crash reports. Until you say yes, Firebase Analytics and Crashlytics send nothing. You can change your answer any time in the Info tab, under Settings. With your yes, the app uses these Google Firebase services to understand how it is used and to fix problems:</p>
             <ul>
                 <li><strong>Firebase Analytics</strong> records which screens and features are used, for example opening a tab, starting a game or a scorer match. It collects an app instance identifier, device and operating system details, app version and approximate location derived from the IP address.</li>
                 <li><strong>Firebase Crashlytics</strong> sends a report when the app crashes, with technical details about the device and what the app was doing.</li>
-                <li><strong>Firebase Remote Config</strong> downloads settings for the app, such as how often the review request appears. It uses an installation identifier.</li>
             </ul>
-            <p>This data does not include your name, your email address, the player names you type or the darts you enter. Google processes it on my behalf. See <a href="https://firebase.google.com/support/privacy">Privacy and Security in Firebase</a>.</p>
+            <p><strong>Firebase Remote Config</strong> downloads settings for the app, such as how often the review request appears, whatever your answer. It uses an installation identifier and sends nothing about how you use the app.</p>
+            <p>None of this includes your name, your email address, the player names you type or the darts you enter, and none of it is used for advertising. Google processes it on my behalf. See <a href="https://firebase.google.com/support/privacy">Privacy and Security in Firebase</a>.</p>
 
+            <h2>Feedback you send</h2>
+            <p>The Info tab has a feedback form. Only when you send it, the app stores a report in the app's own iCloud database (Apple's CloudKit), where I read it: the reason you picked, the note you wrote, the date, which app and version, the iOS version and the device model. It holds no name or email address unless you write one into the note. Write to me and I will delete a report you sent.</p>
             <h2>No ads, no tracking</h2>
             <p>Darts Checkout Pro contains no advertising and no advertising SDKs, and it never asks to track you across other companies' apps and websites.</p>
 
