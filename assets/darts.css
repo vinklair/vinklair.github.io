@@ -109,3 +109,17 @@ body.darts.app-pro { --accent: #e5483a; --accent-2: #ffb347; --accent-soft: rgba
 /* ---------- Apple Watch row ---------- */
 
 .darts .watch-row { justify-content: center; }
+
+/* ---------- Everything new, folded away ---------- */
+
+/* The release's full list of new features: the page shows the main ones
+   above, so the rest waits behind one line. */
+.darts .all-new > summary {
+    cursor: pointer; list-style: none; display: flex; align-items: center; justify-content: space-between;
+    gap: 16px; padding: 22px 26px; border-radius: 22px; background: var(--bg-raised); border: 1px solid var(--line);
+    font: 700 1.2rem/1.2 var(--font-round);
+}
+.darts .all-new > summary::-webkit-details-marker { display: none; }
+.darts .all-new > summary::after { content: "+"; font-size: 1.6rem; color: var(--accent); transition: transform 0.3s var(--ease); }
+.darts .all-new[open] > summary::after { transform: rotate(45deg); }
+.darts .all-new[open] > summary { margin-bottom: 28px; }
