@@ -66,7 +66,7 @@
             <h2>Usage statistics and crash reports, only with your yes</h2>
             <p>The first time you open version 6.0 or later, the app asks whether it may send anonymous usage statistics and crash reports. Until you say yes, Firebase Analytics and Crashlytics send nothing. You can change your answer any time in the Info tab, under Settings. With your yes, the app uses these Google Firebase services to understand how it is used and to fix problems:</p>
             <ul>
-                <li><strong>Firebase Analytics</strong> records which screens and features are used, for example opening a tab, starting a game or a scorer match. It collects an app instance identifier, device and operating system details, app version and approximate location derived from the IP address.</li>
+                <li><strong>Firebase Analytics</strong> records which screens and features are used, for example opening a tab, starting a game or a scorer match. It collects an app instance identifier, device and operating system details, app version and approximate location derived from the IP address. It also records a tip you leave in the app: which tip, its price and the currency, never your payment details.</li>
                 <li><strong>Firebase Crashlytics</strong> sends a report when the app crashes, with technical details about the device and what the app was doing.</li>
             </ul>
             <p><strong>Firebase Remote Config</strong> downloads settings for the app, such as how often the review request appears, whatever your answer. It uses an installation identifier and sends nothing about how you use the app.</p>
@@ -78,7 +78,7 @@
             <p>Darts Checkout Pro contains no advertising and no advertising SDKs, and it never asks to track you across other companies' apps and websites.</p>
 
             <h2>Purchases</h2>
-            <p>You buy the app once through the App Store, and you can leave a Buy Me a Coffee tip in the app. Apple processes the payment. The app only receives confirmation of a purchase. I never see your payment details.</p>
+            <p>You buy the app once through the App Store, and you can leave a Buy Me a Coffee tip in the app. Apple processes the payment. The app only receives confirmation of a purchase. I never see your payment details. If you said yes to usage statistics, Firebase Analytics also records a tip: the product, its price and the currency.</p>
 
             <h2>Apple Watch</h2>
             <p>The Apple Watch app contains no analytics, crash reporting or advertising SDKs. It keeps your game scores on the watch and reads your checkout customizations from the same iCloud key-value storage as the iPhone app.</p>
