@@ -112,8 +112,8 @@ body.darts.app-pro { --accent: #e5483a; --accent-2: #ffb347; --accent-soft: rgba
 
 /* ---------- Everything new, folded away ---------- */
 
-/* The release's full list of new features: the page shows the main ones
-   above, so the rest waits behind one line. */
+/* Every version's What's New, newest first: the page shows the main
+   features above, so the history waits behind one line. */
 .darts .all-new > summary {
     cursor: pointer; list-style: none; display: flex; align-items: center; justify-content: space-between;
     gap: 16px; padding: 22px 26px; border-radius: 22px; background: var(--bg-raised); border: 1px solid var(--line);
